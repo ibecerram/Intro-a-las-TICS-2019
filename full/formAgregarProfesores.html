@@ -414,27 +414,29 @@
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Alumnos</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
-								<li class="nav-item"><a href="index.html" class="nav-link active">Mostrar alumnos</a></li>
-								<li class="nav-item"><a href="../../../../layout_2/LTR/default/full/index.html" class="nav-link">Agregar alumnos</a></li>
-								<li class="nav-item"><a href="../../../../layout_3/LTR/default/full/index.html" class="nav-link">Editar alumnos</a></li>
+								
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/formAgregarAlumnos.html" class="nav-link">Agregar alumnos</a></li>
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/formEditarAlumnos.html" class="nav-link">Editar alumnos</a></li>
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/datatable_mostrarAlumnos.html" class="nav-link active">Mostrar alumnos</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Profesores</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="index.html" class="nav-link active">Mostrar profesores</a></li>
-								<li class="nav-item"><a href="../../../LTR/material/full/index.html" class="nav-link">Agregar profesores</a></li>
-								<li class="nav-item"><a href="../../../LTR/material/full/index.html" class="nav-link">Editar profesores</a></li>
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/formAgregarProfesores.html" class="nav-link">Agregar profesores</a></li>
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/formEditarProfesores.html" class="nav-link">Editar profesores</a></li>
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/datatable_mostrarProfesores.html" class="nav-link active">Mostrar profesores</a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack"></i> <span>Carreras</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
-								<li class="nav-item"><a href="../seed/layout_nav_horizontal.html" class="nav-link">Mostrar carreras</a></li>
-								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">Agregar carreras</a></li>
-								<li class="nav-item"><a href="../seed/sidebar_main.html" class="nav-link">Editar carrera</a></li>
+								
+								<li class="nav-item"><a href="index.html" class="nav-link">Agregar carreras</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link">Editar carrera</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link">Mostrar carreras</a></li>
 							</ul>
 						</li>
 						<!-- /main -->
@@ -475,7 +477,7 @@
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
 							<a href="form_layout_horizontal.html" class="breadcrumb-item">Form</a>
-							<span class="breadcrumb-item active">Profesores</span>
+							<span class="breadcrumb-item active">Agregar profesor</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -508,14 +510,13 @@
 			</div>
 			<!-- /page header -->
 
-
 			<!-- Content area -->
 			<div class="content">				
 
 				<!-- 2 columns form -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Datos del docente</h5>
+						<h5 class="card-title">Datos del profesor</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -530,10 +531,10 @@
 							<div class="row">
 								<div class="col-md-6">
 									<fieldset>
-										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Personal details</legend>
+										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Datos personales</legend>
 										
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Ingresa tu nombre</label>
+											<label class="col-lg-3 col-form-label">Nombre</label>
 											<div class="col-lg-9">
 												<div class="row">
 													<div class="col-md-6">
@@ -548,24 +549,6 @@
 														<input type="text" placeholder="Apellido materno" class="form-control">
 													</div>
 												</div>
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Sexo:</label>
-	
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<input type="radio" class="form-input-styled" name="gender" checked data-fouc>
-													Masculino
-												</label>
-											</div>
-	
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<input type="radio" class="form-input-styled" name="gender" data-fouc>
-													Femenino
-												</label>
 											</div>
 										</div>
 															
@@ -591,9 +574,9 @@
 										</div>
 
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">CURP</label>
+											<label class="col-lg-3 col-form-label">Cédula profesional</label>
 											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="CURP">
+												<input type="text" class="form-control" placeholder="Cédula">
 											</div>
 										</div>
 
@@ -608,29 +591,13 @@
 
 								<div class="col-md-6">
 									<fieldset>
-					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Datos escolares</legend>
+										
+										<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Datos escolares</legend>
 
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Selecciona tu carrera</label>
+											<label class="col-lg-3 col-form-label">Clave interna del maestro</label>
 											<div class="col-lg-9">
-												<select data-placeholder="Carreras" class="form-control form-control-select2" data-fouc>
-													<option>
-														
-													</option>
-													<optgroup label="Ingenierías">
-														<option value="ITI">Tecnologías de la Información</option>
-														<option value="ISA">Sistemas Automotrices</option>
-														<option value="IM">Mecatrónica</option>
-														<option value="ITM">Tecnologías de Manufactura</option>
-													</optgroup>
-													<optgroup label="Licenciaturas">
-														<option value="LAYGE">Administración y Gestión Empresarial</option>
-													</optgroup>
-													<optgroup label="Maestrías">
-														<option value="MER">Energías Renovables</option>
-														<option value="MI">Ingeniería</option>
-													</optgroup>
-												</select>
+												<input type="text" class="form-control" placeholder="Clave">
 											</div>
 										</div>
 
@@ -655,6 +622,11 @@
 			</div>
 			<!-- /content area -->
 
+
+
+
+
+			
 
 			<!-- Footer -->
 			<div class="navbar navbar-expand-lg navbar-light">

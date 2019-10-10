@@ -459,7 +459,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Base de datos</span> - Alumnos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Base de datos</span> - Profesores</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -477,7 +477,7 @@
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
 							<a href="datatable_basic.html" class="breadcrumb-item">Base de datos</a>
-							<span class="breadcrumb-item active">Alumos</span>
+							<span class="breadcrumb-item active">Profesores</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -517,7 +517,7 @@
 				<!-- Basic datatable -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title"><b>ALUMNOS</b></h5>
+						<h5 class="card-title"><b>PROFESORES</b></h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -528,7 +528,17 @@
 					</div>
 
 					<div class="card-body">
-						La base de datos muestra la información más importante del alumno, permitiendo ver sus datos personales.
+						La base de datos muestra la información más importante del profesor, permitiendo ver sus datos personales.
+
+						<div class="table-responsive">
+								<button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">
+									Agregar nuevo
+
+									<i class="icon-play3 ml-2">
+										
+									</i>
+								</button>
+						</div>
 					</div>
 
 					<table class="table datatable-basic table-hover">
@@ -536,19 +546,23 @@
 							<tr>
 								<th>Nombre</th>
 								<th>Apellidos</th>
-								<th>Matrícula</th>
-								<th>Carrera</th>
-								<th>Cuatrimestre</th>
+								<th>Clave interna</th>
+								<th>Celular</th>
+								<th>Correo electrónico</th>
+								<th>Antigüedad</th>
+								<th>Cédula</th>
 								<th class="text-center">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Juan</td>
-								<td>Hernandez H.</td>
-								<td>1930062</td>
-								<td>ITI</td>
-								<td>1</td>
+								<td>Felix</td>
+								<td>Hernandez Ochoa</td>
+								<td>00001</td>
+								<td>8341234567</td>
+								<td>correo1@gmail.com</td>
+								<td>2010</td>
+								<td>123456780</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -557,20 +571,21 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
 											</div>
 										</div>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<td>Pedro</td>
-								<td>Martínez B.</td>
-								<td>1930063</td>
-								<td>IM</td>
-								<td>3</td>
+								<td>Orlando</td>
+								<td>Flamarique Jesus</td>
+								<td>00002</td>
+								<td>8341234564</td>
+								<td>correo2@gmail.com</td>
+								<td>2011</td>
+								<td>1234567819</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -579,20 +594,45 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
 											</div>
 										</div>
 									</div>
 								</td>
 							</tr>
+							<tr>
+								<td>Angel</td>
+								<td>Fortan Hernández</td>
+								<td>00003</td>
+								<td>8341234567</td>
+								<td>correo3@gmail.com</td>
+								<td>2012</td>
+								<td>1234567818</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+
 							<tr>
 								<td>Laura</td>
-								<td>Santiago N.</td>
-								<td>1930064</td>
-								<td>LAYGE</td>
-								<td>5</td>
+								<td>Sierra Treviño</td>
+								<td>00004</td>
+								<td>8341234317</td>
+								<td>correo4@gmail.com</td>
+								<td>2013</td>
+								<td>1234567817</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -601,9 +641,152 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Julieta</td>
+								<td>Martinez Hernández</td>
+								<td>00005</td>
+								<td>8343434567</td>
+								<td>correo5@gmail.com</td>
+								<td>2014</td>
+								<td>1234567816</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Luis</td>
+								<td>Flores Bernal</td>
+								<td>00006</td>
+								<td>8341344567</td>
+								<td>correo6@gmail.com</td>
+								<td>2015</td>
+								<td>1234567815</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Gissel</td>
+								<td>Rivera López</td>
+								<td>00007</td>
+								<td>8341239867</td>
+								<td>correo7@gmail.com</td>
+								<td>2016</td>
+								<td>1234567814</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Angélica</td>
+								<td>Tovar Reza</td>
+								<td>00008</td>
+								<td>8347894565</td>
+								<td>correo8@gmail.com</td>
+								<td>2017</td>
+								<td>1234567813</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>María</td>
+								<td>García Nieto</td>
+								<td>00009</td>
+								<td>8341234367</td>
+								<td>correo9@gmail.com</td>
+								<td>2018</td>
+								<td>1234567812</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Edith</td>
+								<td>Reynoso Alcocér</td>
+								<td>00010</td>
+								<td>8341238767</td>
+								<td>correo10@gmail.com</td>
+								<td>2019</td>
+								<td>123456781</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i>Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i>Eliminar</a>
 											</div>
 										</div>
 									</div>
@@ -617,6 +800,131 @@
 
 			</div>
 			<!-- /content area -->
+
+			
+			 <!-- Horizontal form modal -->
+			<div id="modal_form_horizontal" class="modal fade" tabindex="-1">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Agregar profesor</h5>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						
+
+						<!-- Content area -->
+						<div class="content">				
+			
+							<!-- 2 columns form -->
+							<div class="card">
+								<div class="card-header header-elements-inline">
+									<h5 class="card-title">Datos del docente</h5>
+									<div class="header-elements">
+										<div class="list-icons">
+			   			            		<a class="list-icons-item" data-action="collapse"></a>
+			   			            		<a class="list-icons-item" data-action="reload"></a>
+			   			            		<a class="list-icons-item" data-action="remove"></a>
+			   			            	</div>
+					    			        	</div>
+								</div>
+			
+								<div class="card-body">
+									<form action="#">
+										<div class="row">
+											<div class="col-md-6">
+												<fieldset>
+													<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Datos personales</legend>
+													
+													<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Nombre</label>
+														<div class="col-lg-9">
+															<div class="row">
+																<div class="col-md-6">
+																	<input type="text" placeholder="Nombre" class="form-control">
+																</div>
+			
+																<div class="col-md-6">
+																	<input type="text" placeholder="Apellido paterno" class="form-control">
+																</div>
+			
+																<div class="col-md-6">
+																	<input type="text" placeholder="Apellido materno" class="form-control">
+																</div>
+															</div>
+														</div>
+													</div>
+																		
+													<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Correo electrónico</label>
+														<div class="col-lg-9">
+															<input type="text" placeholder="tucorreo@gmail.com" class="form-control">
+														</div>
+													</div>
+			
+													<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Teléfono celular</label>
+														<div class="col-lg-9">
+															<input type="text" class="form-control" placeholder="Celular">
+														</div>
+													</div>
+					
+													<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Dirección</label>
+														<div class="col-lg-9">
+															<input type="text" class="form-control" placeholder="¿Dónde vives?">
+														</div>
+													</div>
+			
+													<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Cédula profesional</label>
+														<div class="col-lg-9">
+															<input type="text" class="form-control" placeholder="Cédula">
+														</div>
+													</div>
+			
+													<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Información adicional</label>
+														<div class="col-lg-9">
+															<textarea rows="5" cols="5" class="form-control" placeholder="Opcional"></textarea>
+														</div>
+													</div>
+												</fieldset>
+											</div>
+			
+											<div class="col-md-6">
+												<fieldset>
+								                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Datos escolares</legend>
+			
+													<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Clave interna del maestro</label>
+														<div class="col-lg-9">
+															<input type="text" class="form-control" placeholder="Clave">
+														</div>
+													</div>
+			
+													<div class="form-group row">
+														<label class="col-lg-3 col-form-label">Año de ingreso</label>
+														<div class="col-lg-9">
+															<input type="text" class="form-control" placeholder="Año">
+														</div>
+													</div>
+												</fieldset>
+											</div>
+										</div>
+			
+										<div class="text-right">
+											<button type="submit" class="btn btn-primary">Agregar docente <i class="icon-paperplane ml-2"></i></button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- /2 columns form -->	
+						</div>
+						<!-- /content area -->
+					</div>
+				</div>
+			</div>
+			<!-- /horizontal form modal -->
 
 
 			<!-- Footer -->
